@@ -1,0 +1,22 @@
+{
+  "name": "Michael Drew Teter",
+  "image": "assets/headshot.jpg",
+  "location": "Boston, MA",
+  "bio": "",
+  "socials": [
+    { 
+      "name": "Github",
+      "url": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    },
+    {
+      "name": "email",
+      "url": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    }
+  ],
+  "skills": [],
+  "jobs": [],
+  "education": [],
+  "projects": [],
+  "jobSkills": [],
+  "projectSkills": []
+}
