@@ -1,3 +1,11 @@
+/* Variable definitions */
+:root {
+  --color-header-background: rgb(25, 25, 112); /* midnightblue */
+  --color-active-background: rgb(25, 25, 112); /* midnightblue */
+  --color-active-text: rgb(255, 255, 255); /* White */
+  --color-inactive-background: rgb(211, 211, 211); /* lightgray */
+}
+
 /* Base reset for padding and margin for all elements */
 * {
   padding: 0;
@@ -8,101 +16,149 @@
 /* Body styling */
 body {
   font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
+  line-height: 1.5;
+  background-color: #f0f0f0;
+  
 }
 
-/* Container for centering the content */
+body > * {
+  /* min-height: 100vh; */
+  min-height: 100vh;
+}
+
+/* Container for positioning the content */
 .container {
-  width: 80%;
+  display: grid;
+  grid-template-rows: min-content auto 1fr;
+  gap: 10px;
+  padding: 10px;
   margin: auto;
   overflow: hidden;
-  padding: 20px;
+  min-height: calc(100vh - 20px);
 }
+
+@media (width > 1024px) {
+  .container {
+    width: 80%;
+    min-width: 1024px;
+    grid-template-columns: 75% 25%;
+  }
+
+  .container header {
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row: span 1;
+  }
+
+  .container #skillList {
+    grid-column: 2 / span 1;
+    grid-row-start: 1;
+    grid-row-end: -1;
+  }
+
+  .container section {
+    grid-column: 1;
+    grid-row: auto / span 1;
+  }
+}
+
+@media (width <= 1024px) {
+  .container {
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+}
+
 
 /* Header styling */
 header {
-  background: #333;
-  color: #fff;
-  padding: 20px;
+  /* background: midnightblue; */
+  background: var(--color-header-background);
+  color: white;
+  padding: 15px;
   text-align: center;
+  border-radius: 5px;
 }
 
 /* Header image and name styling */
 .headshot {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   display: block;
-  margin: 20px auto;
-}
-
-header h1 {
-  margin-bottom: 10px;
+  margin: 10px auto;
 }
 
 /* Contact information styling */
 #contactInfo {
   font-size: 1.1em;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #fff;
-  padding: 15px;
+  padding: 10px;
 }
 
+#contactInfo .email {
+  color: inherit;
+}
 
 /* Section styling for employment, education, and skills */
 section {
   background: #fff;
-  margin: 20px 0;
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-section h2 {
+section hr {
   margin-bottom: 10px;
 }
 
 /* Timeline styling */
 #timeline .entry {
-  border-left: 3px solid #333;
   margin-bottom: 5px;
-  cursor: pointer;
 }
 
 #timeline .entry-header {
-  background: #e2e2e2;
+  background: var(--color-inactive-background);
   padding: 10px;
-  margin-left: -3px;
+  border-left: 4px solid black;
+  cursor: pointer;
+}
+
+#timeline .entry .entry-content {
+  display: none
+}
+
+#timeline .entry.active .entry-header {
+  background: var(--color-active-background);
+  border-left: 4px solid black;
+  color: var(--color-active-text);
+}
+
+#timeline .entry.active .entry-content {
+  display: block;
+  border-left: 4px solid black;
+  background: lightsteelblue;
+  padding-bottom: 10px;
 }
 
 #timeline .entry-header:hover {
-  background: #ccc;
-  color: #333;
+  filter: invert(0.25) contrast(1.5);
 }
 
 /* Style for the job description content */
 #timeline .entry-content p {
   padding: 5px 10px;
-  background: #f9f9f9;
-  border-left: 3px solid #333;
-  display: block;
 }
 
-/* List styling for education and skills */
-section ul {
-  list-style: inside square;
-  padding: 0 20px;
-}
-
-section ul li {
-  padding: 2px 0;
+#timeline .entry-content li {
+  margin-left: 30px;
 }
 
 /* Adjustments for active class */
 .entry.active .entry-header {
-  background-color: #e2e2e2;
-  color: #333;
+  background-color: var(--color-inactive-background);
+  color: black;
 }
 
 .entry.active .entry-content {
@@ -113,11 +169,30 @@ section ul li {
 .entry .entry-header:after {
   content: ' (click to expand)';
   font-size: 0.8em;
-  color: #666;
+  color: dimgray;
 }
 
 .entry.active .entry-header:after {
   content: ' (click to collapse)';
   font-size: 0.8em;
-  color: #666;
+  color: lightgray;
+}
+
+/* Tag styling for skills */
+#tagCollection {
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+#tagCollection .tag {
+  display: inline-block;
+  background: var(--color-inactive-background);
+  padding: 5px 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#tagCollection .tag.active {
+  background: var(--color-active-background);
+  color: var(--color-active-text);
 }

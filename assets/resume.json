@@ -1,22 +1,208 @@
 {
-  "name": "Michael Drew Teter",
-  "image": "assets/headshot.jpg",
-  "location": "Boston, MA",
-  "bio": "",
+  "contact": {
+    "name": "Michael Drew Teter",
+    "image": "assets/headshot.jpg",
+    "phone": null,
+    "email": "mteter13@gmail.com",
+    "location": "Boston, MA"
+  },
   "socials": [
-    { 
-      "name": "Github",
-      "url": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    { "name": "Github", "url": "" },
+    { "name": "LinkedIn", "url": "" },
+    { "name": "Website", "url": "" }
+  ],
+  "jobHistory": [
+    {
+      "id": "AA24",
+      "name": "Artisan's Asylum",
+      "title": "IT Lead",
+      "startDate": "January 2024",
+      "endDate": null,
+      "description": "",
+      "bulletPoints": [
+        "Provides continuous IT support, empowering members to focus on innovation without technical interruptions.",
+        "Introduces cutting-edge tech solutions to support the creative endeavors of Boston's maker community",
+        "Leads IT strategies, laying the technological foundation for future expansions at Artisan's Asylum.",
+        "Acts asprimary tech liaison, fostering a collaborative environment for innovation."
+      ],
+      "jobSkills": [ "AWS", "Collaboration", "DevOps", "Empathy", "Growth Mindset", "Linux", "Windows" ]
     },
     {
-      "name": "email",
-      "url": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+      "id": "CS22",
+      "name": "Cambridge Systematics",
+      "title": "Software Developer (Associate)",
+      "startDate": "April 2022",
+      "endDate": "June 2023",
+      "description": "",
+      "bulletPoints": [
+        "Fostered team growth by mentoring junior engineers, reviewing code, and providing educational resources.",
+        "Led the development of a new booking workflow for improved service customization, and introduced third-party SAML authentication.",
+        "Managed and provisioned AWS resources to ensure the reliable operation and deployment of required services.",
+        "Optimized database queries, reducing load times and resource usage, and implemented API endpoints following RESTful principles while improving client satisfaction",
+        "Designed frontend UI components using Angular and Bootstrap components."
+      ],
+      "jobSkills": [ "Agile", "Angular", "AWS", "CI/CD", "Collaboration", "CSS", "DevOps", "Docker", "Empathy", "Git", "Growth Mindset", "HTML", "Javascript", "Jira", "Mentoring", "OAuth", "PostgreSQL", "Rails", "REST", "Ruby", "SAML", "SQL", "Test Driven Development" ]
+    },
+    {
+      "id": "SO19",
+      "name": "Spooky Owl Tech, LLC",
+      "title": "Founding Developer",
+      "startDate": "December 2019",
+      "endDate": "April 2022",
+      "description": "",
+      "bulletPoints": [
+        "Sought out new clients and drove growth by identifying tech needs and crafting custom solutions.",
+        "Pioneered greenfield projects, selecting optimal techstacks for scalability and performance. Languages included NodeJS, Ruby on Rails, Django, and React as appropriate",
+        "Consistently delivered application features on schedule, enhancing project momentum.",
+        "Managed AWS cloud environments, ensuring high reliability and minimal downtime for applications."
+      ],
+      "jobSkills": [ "AWS", "Bash", "C++", "CI/CD", "Collaboration", "CSS", "DevOps", "Django", "Docker", "Electron", "Empathy", "ExpressJS", "Git", "Growth Mindset", "HTML", "Javascript", "JQuery", "MongoDB", "Microservices", "NodeJS", "OAuth", "PostgreSQL", "Python", "Rails", "React", "React Native", "REST", "Ruby", "SQL", "Test Driven Development", "Typescript" ]
+    },
+    {
+      "id": "TE19",
+      "name": "Trilogy Education",
+      "title": "Mentor",
+      "startDate": "June 2019",
+      "endDate": "April 2022",
+      "description": "",
+      "bulletPoints": [
+        "Passionately mentored numerous developers, sharing expertise and excitement for technology, while fostering a nurturing learning environment.",
+        "Ensured a thorough understanding of coding principles among mentees by delivering in-depth lectures, personalized code reviews, and guidance on key topics.",
+        "Introduced novel pair programming techniques to tackle complex assignments, boosting learner engagement and comprehension."
+      ],
+      "jobSkills": [ "Bash", "Collaboration", "CSS", "Empathy", "Git", "Growth Mindset", "HTML", "Javascript", "JQuery", "Mentoring", "MySQL", "Rails", "REST", "Ruby", "SQL", "Test Driven Development" ]
+    },
+    {
+      "id": "TI19",
+      "name": "Track Information",
+      "title": "Senior Full Stack Engineer",
+      "startDate": "June 2019",
+      "endDate": "April 2022",
+      "description": "",
+      "bulletPoints": [
+        "Focused on the development of serverless technology using Amazon Lambda, NodeJS, and GraphQL, enhancing system efficiency.",
+        "Boosted API performance for banking connectivity, ensuring robust tracking of financial transactions."
+      ],
+      "jobSkills": [ "Agile", "AWS", "CI/CD", "Collaboration", "CSS", "DevOps", "Docker", "Empathy", "ExpressJS", "Git", "GraphQL", "Growth Mindset", "HTML", "Javascript", "Jira", "MongoDB", "Microservices", "NodeJS", "OAuth", "React", "React Native", "Test Driven Development", "Typescript" ]
+    },
+    {
+      "id": "ZC17",
+      "name": "Zipcar",
+      "title": "Software Engineer",
+      "startDate": "August 2017",
+      "endDate": "February 2019",
+      "description": "",
+      "bulletPoints": [
+        "Modernized an outdated billing system, extracting critical tasks and reimplementing them using Ruby on Rails and PostgreSQL.",
+        "Boosted API performance for banking connectivity, ensuring robust tracking of financial transactions."
+      ],
+      "jobSkills": [ "AWS", "Bash", "Collaboration", "CSS", "DevOps", "Docker", "Empathy", "Git", "Growth Mindset", "HTML", "Javascript", "Jira", "JQuery", "Kanban", "Microservices", "PostgreSQL", "React", "REST", "Ruby", "Sinatra", "SQL", "Test Driven Development" ]
+    },
+    {
+      "id": "HM15",
+      "name": "Harvard Medical School",
+      "title": "Senior Software Engineer",
+      "startDate": "August 2015",
+      "endDate": "June 2017",
+      "description": "",
+      "bulletPoints": [
+        "Developed and maintained the Applyhub Platform, allowing researchers to find and apply for medical research grants through the Harvard Catalyst Portal.",
+        "Streamlined and automated the addition of new grant offerings using Ruby on Rails and ReactJS, significantly reducing engineering efforts.",
+        "Regularly managed zero-downtime deployments of critical services to AWS."
+      ],
+      "jobSkills": [ "AWS", "Bash", "Collaboration", "CoffeeScript", "CSS", "DevOps", "Empathy", "ExpressJS", "Git", "Growth Mindset", "HAML", "HTML", "Javascript", "Jira", "JQuery", "Mentoring", "NodeJS", "PostgreSQL", "Rails", "React", "REST", "Ruby", "SAML", "Subversion", "SQL", "Test Driven Development" ]
+    },
+    {
+      "id": "HI15",
+      "name": "Humana",
+      "title": "Senior Software Engineer",
+      "startDate": "May 2015",
+      "endDate": "July 2015",
+      "description": "",
+      "bulletPoints": [
+        "Implemented new features and created documentation for a competitive wellness tracking application written in NodeJS, ReactNative, and MongoDB.",
+        "Optimized services for real-time data tracking, allowing horizontal scaling using message queues, event-based programming, and database sharding."
+      ],
+      "jobSkills": [ "AWS", "Bash", "CI/CD", "Collaboration", "CSS", "DevOps", "Empathy", "ExpressJS", "Git", "Growth Mindset", "HTML", "Javascript", "Jira", "MongoDB", "NodeJS", "React", "React Native", "REST", "Test Driven Development" ]
+    },
+    {
+      "id": "SI14",
+      "name": "ShareableInk",
+      "title": "Interface Engineer",
+      "startDate": "May 2015",
+      "endDate": "July 2015",
+      "description": "",
+      "bulletPoints": [
+        "Implemented new features and created documentation for a competitive wellness tracking application written in NodeJS, ReactNative, and MongoDB.",
+        "Optimized services for real-time data tracking, allowing horizontal scaling using message queues, event-based programming, and database sharding."
+      ],
+      "jobSkills": [ "Angular", "Bash", "Collaboration", "CSS", "Empathy", "Git", "Growth Mindset", "HTML", "Javascript", "Jira", "Rails", "REST", "Ruby", "Test Driven Development" ]
     }
   ],
-  "skills": [],
-  "jobs": [],
-  "education": [],
-  "projects": [],
-  "jobSkills": [],
-  "projectSkills": []
+  "skillTypes": [
+    "Architecture", "Database", "Language", "Library/Framework", "Methodology/Workflow", "Protocol", "Soft Skill", "Tool"
+  ],
+
+  "todo": "Arduino, EC2, Lambda, RDS, Cognito, S3, UI/UX, Backend Development, Frontend Development, Kubernetes, Linux, Windows, MacOS, ECMAScript, Jest, Mocha, Capybara, (other Testing Frameworks)",
+
+  "skills": [
+    { "name": "Agile", "type": "Methodology/Workflow" },
+    { "name": "Angular", "type": "Library/Framework" },
+    { "name": "AWS", "type": "Architecture" },
+    { "name": "Bash", "type": "Language" },
+    { "name": "C++", "type": "Language" },
+    { "name": "CI/CD", "type": "" },
+    { "name": "CoffeeScript", "type": "Language" },
+    { "name": "Collaboration", "type": "Soft Skill" },
+    { "name": "CSS", "type": "Language" },
+    { "name": "DevOps", "type": "" },
+    { "name": "Django", "type": "Framework" },
+    { "name": "Docker", "type": "" },
+    { "name": "Electron", "type": "Library/Framework" },
+    { "name": "Empathy", "type": "Soft Skill" },
+    { "name": "ExpressJS", "type": "Library/Framework" },
+    { "name": "Git", "type": "Tool" },
+    { "name": "GraphQL", "type": "Architecture" },
+    { "name": "Growth Mindset", "type": "Soft Skill" },
+    { "name": "HAML", "type": "Language" },
+    { "name": "HTML", "type": "Language" },
+    { "name": "Javascript", "type": "Language" },
+    { "name": "Jira", "type": "Tool" },
+    { "name": "JQuery", "type": "Library/Framework" },
+    { "name": "Kanban", "type": "Methodology/Workflow" },
+    { "name": "Mentoring", "type": "Soft Skill" },
+    { "name": "Microservices", "type": "Architecture" },
+    { "name": "MongoDB", "type": "Database" },
+    { "name": "MySQL", "type": "Database" },
+    { "name": "NodeJS", "type": "Language", "note": "Yes, I know Node is technically not a language. It's a runtime environment, but this is the closest category." },
+    { "name": "OAuth", "type": "" },
+    { "name": "Pandas", "type": "Library/Framework" },
+    { "name": "PostgreSQL", "type": "Database" },
+    { "name": "Python", "type": "Language" },
+    { "name": "React", "type": "Library/Framework" },
+    { "name": "React Native", "type": "Library/Framework" },
+    { "name": "REST", "type": "Architecture" },
+    { "name": "Rails", "type": "Library/Framework" },
+    { "name": "Ruby", "type": "Language" },
+    { "name": "Sinatra", "type": "Library/Framework" },
+    { "name": "SAML", "type": "" },
+    { "name": "SCSS/LESS", "type": "Language" },
+    { "name": "SQL", "type": "Language" },
+    { "name": "SQLite", "type": "Database" },
+    { "name": "Subversion", "type": "Tool" },
+    { "name": "Tensorflow", "type": "Library/Framework" },
+    { "name": "Test Driven Development", "type": "Methodology/Workflow" },
+    { "name": "Typescript", "type": "Language" }
+  ],
+  "projects": [
+    { "name": "", "description": "", "url": "" }
+  ],
+  "education": [
+    {
+      "name": "Wells College",
+      "degree": "",
+      "startDate": "",
+      "endDate": ""
+    }
+  ]
 }
